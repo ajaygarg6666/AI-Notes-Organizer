@@ -1,15 +1,13 @@
 <div align="center">
 
-  <!-- Title & Description -->
   <h1>🧠 AI Notes Organizer</h1>
   
-  <p align="center">
+  <p>
     <b>A Google Drive + Notion AI + Quizlet hybrid built for modern students.</b><br />
     <i>Upload notes, extract text, generate AI summaries, flashcards, quizzes, and perform semantic search.</i>
   </p>
 
-  <!-- Badges -->
-  <p align="center">
+  <p>
     <a href="https://github.com/ajaygarg6666/ai-notes-organizer/stargazers">
       <img src="https://img.shields.io/github/stars/ajaygarg6666/ai-notes-organizer?style=for-the-badge&color=8A2BE2" alt="Stars" />
     </a>
@@ -24,7 +22,7 @@
     </a>
   </p>
 
-  <p align="center">
+  <p>
     <a href="#-key-features">Key Features</a> •
     <a href="#-tech-stack">Tech Stack</a> •
     <a href="#-architecture">Architecture</a> •
@@ -32,8 +30,9 @@
     <a href="#-roadmap">Roadmap</a>
   </p>
 
-  ---
 </div>
+
+---
 
 ## ✨ Key Features
 
@@ -53,19 +52,22 @@
 
 <div align="center">
 
-### Frontend
+### **Frontend**
+
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)
 
-### Backend
+### **Backend**
+
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=JSON%20web%20tokens&logoColor=white)
 
-### AI Microservice
+### **AI Microservice**
+
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white)
@@ -76,3 +78,10 @@
 ---
 
 ## 🏗️ Architecture
+
+```text
++-------------------+        HTTP / REST        +-------------------+        HTTP        +-----------------------+
+|                   | ------------------------> |                   | -----------------> |                       |
+|  React Frontend   |                           |    Express API    |                    |  Python Microservice  |
+|   (Vite + CSS)    | <------------------------ |  (Node / MongoDB) | <----------------- | (FastAPI + spaCy NLP) |
++-------------------+                           +-------------------+                    +-----------------------+
